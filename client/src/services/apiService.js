@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "http://13.201.131.191/api";
 
 
 export const createPlace = async (name, type, lat, lon) => {
