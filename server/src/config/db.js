@@ -28,7 +28,7 @@ const createTableIfNotExists = async () => {
     console.error("PostGIS not available or error creating table:", err.message);
   }
 };
-(async () => {
-  await createTableIfNotExists(); 
-})();
+// (async () => {
+//   await createTableIfNotExists(); 
+// })();
 module.exports = pool;

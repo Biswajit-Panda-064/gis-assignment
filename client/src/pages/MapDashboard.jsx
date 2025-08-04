@@ -21,7 +21,7 @@ import {
     getDistanceBetweenPoints,
 } from "../services/apiService";
 
-const OpenLayersMap = () => {
+const MapDashboard = () => {
     const tooltipRef = useRef(null);
     const mapRef = useRef(null);
     const clickedButtonRef = useRef(null);
@@ -469,4 +469,4 @@ const OpenLayersMap = () => {
     );
 };
 
-export default OpenLayersMap;
+export default MapDashboard;
