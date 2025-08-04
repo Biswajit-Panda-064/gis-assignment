@@ -45,7 +45,12 @@ const OpenLayersMap = () => {
         toast.dismiss();
         toast(msg);
     };
-
+    const buttonOptions = [
+        { id: "add", label: "Add Location" },
+        { id: "nearby", label: "Nearby Places" },
+        { id: "nearest", label: "Nearest Location" },
+        { id: "distance", label: "Distance Calculation" },
+    ];
 
     useEffect(() => {
         if (!mapRef?.current) return;
@@ -310,13 +315,6 @@ const OpenLayersMap = () => {
 
     const metersToKilometers = (meters) =>
         (meters / 1000).toFixed(2) + " K.M";
-
-    const buttonOptions = [
-        { id: "add", label: "Add Location" },
-        { id: "nearby", label: "Nearby Places" },
-        { id: "nearest", label: "Nearest Location" },
-        { id: "distance", label: "Distance Calculation" },
-    ];
 
     return (
         <>
